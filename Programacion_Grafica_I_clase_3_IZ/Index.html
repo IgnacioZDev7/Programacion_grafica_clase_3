@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Scripts optimizados con async y defer -->
+    <script src="loader.js" async></script>
+    <script src="calculator.js" async></script>
+    <script src="ui.js" async></script>
+    <script src="validator.js" async></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator-header">
+            <h1 class="calculator-title">Calculadora</h1>
+        </div>
+        <div class="input-group">
+            <input type="number" id="num1" class="number-input" placeholder="Ingresa el primer número">
+        </div>
+        <div class="input-group">
+            <input type="number" id="num2" class="number-input" placeholder="Ingresa el segundo número">
+        </div>
+        <div class="input-group">
+            <select id="operation" class="operation-select">
+                <option value="add">Sumar</option>
+                <option value="subtract">Restar</option>
+                <option value="multiply">Multiplicar</option>
+                <option value="divide">Dividir</option>
+            </select>
+        </div>
+        <button id="calculate" class="calculate-btn">
+            Calcular Resultado
+        </button>
+        
+        <div id="result" class="result-display empty">
+            Ingresa los números y selecciona una operación
+        </div>
+    </div>
+</body>
+</html>
